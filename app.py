@@ -18,7 +18,7 @@ st.subheader("Importing the dataset")
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
-uploaded_file = st.file_uploader(label="Upload your csv or excel file. (200 MB max)",
+uploaded_file = st.file_uploader(label="Upload your csv or excel (schema) file of vgsales. (200 MB max)",
                          type=['csv','xlsx'])
 
 global df
