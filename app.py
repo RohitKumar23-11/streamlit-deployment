@@ -32,7 +32,7 @@ if uploaded_file is not None:
         df = pd.read_excel(uploaded_file)
         
 try:
-    st.write("uploaded file will show above")
+    st.write("uploaded file will show below")
 except Exception as e:
     print(e)
     st.subheader("Error shows because dataset is not uploaded yet or need to upload to correct file type.")
