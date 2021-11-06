@@ -1,8 +1,0 @@
-pandas==1.0.5
-numpy==1.18.5
-plotly_express==0.4.1
-streamlit==1.0.0
-matplotlib==3.2.2
-seaborn==0.10.1
-numpy==1.21.4
-pip >= 21.1.1
