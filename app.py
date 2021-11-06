@@ -97,7 +97,7 @@ if check_raw:
         
 # @st.cache 
 # def get_data():
-#     df = pd.read_csv(r"D:\projects dataset\vgsales.csv")
+#     df = pd.read_csv(r"https://raw.githubusercontent.com/RohitKumar23-11/streamlit-deployment/main/vgsales.csv")
     
 # # df['hour'] = pd.to_datetime(df['TimeStamp'], format="%H:%M:%S").dt.hour
 #     return df
