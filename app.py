@@ -27,7 +27,7 @@ def get_data():
 # df = get_data()
 #st.write(df)  
 
-st.subheader("Importing the dataset :mortar_board: ")
+st.subheader("Importing the dataset from My GitHub :mortar_board: ")
 
 #st.set_option('deprecation.showfileUploaderEncoding', False)
 
