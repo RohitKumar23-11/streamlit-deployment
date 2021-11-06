@@ -16,6 +16,16 @@ import matplotlib.pyplot as plt
 st.set_page_config(page_title='Sales of Video Games',
                    page_icon=":sunny:",
                    layout='wide')
+        
+@st.cache 
+def get_data():
+     df = pd.read_csv(r"https://raw.githubusercontent.com/RohitKumar23-11/streamlit-deployment/main/vgsales.csv")
+    
+# df['hour'] = pd.to_datetime(df['TimeStamp'], format="%H:%M:%S").dt.hour
+     return df
+
+# df = get_data()
+#st.write(df)  
 
 st.subheader("Importing the dataset :mortar_board: ")
 
@@ -93,17 +103,7 @@ if check_raw:
 
     with st.expander("Data Describe"):
         st.dataframe(df.describe().T)
-        
-        
-@st.cache 
-def get_data():
-     df = pd.read_csv(r"https://raw.githubusercontent.com/RohitKumar23-11/streamlit-deployment/main/vgsales.csv")
-    
-# df['hour'] = pd.to_datetime(df['TimeStamp'], format="%H:%M:%S").dt.hour
-     return df
-
-# df = get_data()
-#st.write(df)    
+          
  
     st.sidebar.header("Please Filter the data here:")
     genre = st.sidebar.multiselect(
